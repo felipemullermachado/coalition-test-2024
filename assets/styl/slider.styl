@@ -1,0 +1,37 @@
+.slider
+  max-width: 910px
+  width 100%
+  .slide
+    padding 0 4px
+    img
+      height: 100%
+      width 100%
+      max-width: 220px !important
+      aspect-ratio: 220/135
+      object-fit: cover
+  
+  .slick-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    gap 6px // @proportional-skip
+    width 100%
+    padding-top: 11px // @proportional-skip
+    button 
+      font-size: 0
+      min-height: 6px // @proportional-skip
+      min-width 6px // @proportional-skip
+      display: flex
+      border-radius: 50%
+      aspect-ratio: 1
+      background #fff
+      padding 0
+      cursor pointer
+      opacity .2
+      transition opacity .2s ease-in
+    .slick-active
+      button
+        opacity 1
+      button
+        &:hover
+          opacity 1
