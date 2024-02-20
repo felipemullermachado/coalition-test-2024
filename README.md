@@ -9,11 +9,11 @@ Make sure you have Node.js installed. The recommended version is 18.17.0.
 To install the dependencies, use the following command:
 
 ```sh
-$ yarn install
+yarn install
 ```
 # or
 ```sh
-$ npm install
+npm install
 ```
 
 ## Usage
@@ -21,9 +21,9 @@ $ npm install
 To start the project, you can use the following command:
 
 ```sh
-$ yarn start
+yarn start
 ```
 # or
 ```sh
-$ npm start
+npm start
 ```
