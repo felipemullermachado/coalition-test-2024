@@ -1,0 +1,66 @@
+$color-blue-dark = #46506b
+$color-white = #fff
+
+*, *:before
+  box-sizing border-box
+
+html,
+body
+  font-size: 10px
+  overflow-x: hidden
+
+body
+  background $color-white
+  font-family: 'Lato'
+  color: #000
+
+img
+	display: block
+	max-width: 100%
+
+button, a
+  font-family: inherit
+  text-decoration: none
+  color inherit
+
+button
+	border: none
+	background none
+  appearance none
+  cursor pointer
+	&:focus
+		box-shadow: 0 0 0 0;
+		outline: 0;
+
+a
+  display: inline-block
+
+strong
+	font-weight: bold !important
+	font-size: 1em
+
+.block
+  display: block
+
+.container
+  display: block
+  max-width: 960px // @proportional-skip
+  width 100%
+  margin 0 auto
+
+.color-blue-dark
+  color $color-blue-dark
+
+.title
+  font-family: 'Oswald'
+  font-weight: bold
+  text-transform: uppercase
+
+.text,p
+  font-size: 1.6rem
+  line-height: 1.5em
+  font-weight: 300
+  color inherit
+
+.text-center
+  text-align: center
