@@ -1,0 +1,43 @@
+.header
+  padding-top: 8px
+  .logo-anchor
+    display: flex
+    align-items: center
+    gap 9px
+    p
+      font-family: 'Bebas'
+      font-size: 2.24rem
+      line-height: 1em
+      letter-spacing: 1px
+      opacity 0
+  nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+  
+  .links-list
+    list-style-type: none;
+    counter-reset: custom-counter;
+    padding-top: 4px
+    li
+      font-family: 'Lato'
+      font-size: 2rem
+      color #fff
+      font-weight: 900
+      font-style: italic
+      text-transform: uppercase
+      letter-spacing: 3px
+      display: inline-block
+      &:not(:first-of-type)
+        margin-left: 49px
+    a
+      font inherit
+      border-bottom 1px solid currentColor
+      padding-bottom 4px
+      &::before
+        content: counter(custom-counter, decimal-leading-zero) '.';
+        counter-increment: custom-counter;
+        margin-right: 0.5em;
+
+      
+    
