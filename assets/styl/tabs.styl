@@ -1,0 +1,28 @@
+.tabs-list
+  display: flex
+  button
+    font-family: 'Oswald'
+    font-size: 2rem
+    line-height: 1em
+    text-transform: uppercase
+    font-weight: bold
+    background transparent
+    color #AFB2BD
+    padding 10px 22px
+    cursor pointer
+    transition all .15s ease-in
+    &[aria-selected="true"]
+      background #AEB2BD
+      color #46506b
+      text-decoration: underline
+
+.tab-content
+  background rgba(255,255,255, 0.7)
+  display: block
+  max-width: fit-content
+  padding 20px 38px
+  margin-top 100px
+  ul
+    p
+      display: flex
+      gap 45px

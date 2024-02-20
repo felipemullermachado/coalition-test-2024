@@ -29,8 +29,20 @@
     align-items: center
     gap 30px
     padding-top: 30px
+    padding-bottom 26px
     h2
       flex 0 0 240px
       + p 
         display: inline-block
         padding-right: 100px
+  
+  .bkg-climb
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    aspect-ratio: 1600/549
+    transition all .3s ease-in-out
+    &.content1
+      background-image url('./assets/img/img-bkg-climb.png')
+    &.content2
+      background-image url('./assets/img/img-bkg-mountain-02.png')

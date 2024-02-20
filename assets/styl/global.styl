@@ -27,10 +27,7 @@ button
 	border: none
 	background none
   appearance none
-  cursor pointer
-	&:focus
-		box-shadow: 0 0 0 0;
-		outline: 0;
+  cursor pointer !important
 
 a
   display: inline-block
@@ -47,9 +44,13 @@ strong
   max-width: 960px // @proportional-skip
   width 100%
   margin 0 auto
+  overflow: hidden
 
 .color-blue-dark
   color $color-blue-dark
+
+.bkg-blue-dark
+  background-color $color-blue-dark
 
 .title
   font-family: 'Oswald'
@@ -69,6 +70,11 @@ strong
       margin-left: -39px
     &.custom-position-x
       margin-left: -25px
+
+h3
+  &.title
+    font-size: 3.2rem
+    margin-bottom 20px
 
 
 .text,p
