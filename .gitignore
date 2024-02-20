@@ -1,0 +1,2 @@
+# ignore node dependency directories (used by gulp)
+node_modules/
