@@ -1,0 +1,35 @@
+.accordion-item
+  margin-bottom 30px
+  button
+    font-family: 'Oswald'
+    font-size: 2rem
+    line-height: 1em
+    text-transform: uppercase
+    font-weight: bold
+    background #46506b
+    color #AFB2BD
+    padding 10px 22px
+    cursor pointer
+    transition all .15s ease-in
+    width 100%
+    text-align: left
+    &:focus
+      background #46506b
+      color #AFB2BD
+    &[aria-expanded="true"]
+      background #AEB2BD
+      color #46506b
+      text-decoration: underline
+
+.accordion-content
+  section
+    background rgba(255,255,255, 0.7)
+    display: block
+    max-width: 100%
+    padding 20px 38px
+    margin-left: 25px
+    margin-right: 25px
+    ul
+      p
+        display: flex
+        gap 45px
