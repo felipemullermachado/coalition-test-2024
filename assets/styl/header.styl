@@ -31,6 +31,35 @@
         content: counter(custom-counter, decimal-leading-zero) '.';
         counter-increment: custom-counter;
         margin-right: 0.5em;
+  
+  &.fixed
+    position: fixed
+    background #fff
+    animation slideDown .3s ease-in forwards
+    width 100%
+    z-index: 5
+    padding 15px 0
+    .logo-anchor
+      p
+        opacity: 1
+    + .main
+      .top-bkg
+        margin-top: 0 !important
+    
+    .links-list
+      padding-top 0
+      li
+        color $color-blue-dark
+
+
+@keyframes slideDown {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0;
+  }
+}
 
       
     
